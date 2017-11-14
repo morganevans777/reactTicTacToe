@@ -4,7 +4,7 @@ import './index.css';
 
 function Square(props) {
   return (
-    <button className="square" onClick={props.onClick}>
+    <button className="square btn square-buttons" onClick={props.onClick}>
       {props.value}
     </button>
   );
@@ -90,7 +90,7 @@ class Game extends React.Component {
         'Go to game start';
       return (
         <li key={move}>
-          <button onClick={() => this.jumpTo(move)}>{desc}</button>
+          <button className='button waves-effect waves-light btn' onClick={() => this.jumpTo(move)}>{desc}</button>
         </li>
       );
     });
